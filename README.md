@@ -47,7 +47,7 @@ The tests that matter play audio and vibrate, so they run on a device, with `./g
 
 ### Releasing
 
-Bump `version` in [`gradle.properties`](gradle.properties) (and the version in the installation instructions above) and merge to `main`. The [release workflow](.github/workflows/release.yml) then publishes the new version to Maven Central, tags it as `v<version>` and creates a GitHub release. It is disabled until its job's `false &&` condition is removed.
+Bump `version` in [`gradle.properties`](gradle.properties) (and the version in the installation instructions above) and merge to `main`. The [release workflow](.github/workflows/release.yml) then publishes the new version to Maven Central, tags it as `v<version>` and creates a GitHub release.
 
 The workflows need these repository secrets:
 

@@ -18,10 +18,8 @@ permissions:
 jobs:
   release:
     name: Publish and release
-    # A manual run can target any branch, but only main may be released. Disabled until hapticlabsplayer
-    # and habplayer build on this library and the repository has the secrets below: remove
-    # `false &&` to release each new version
-    if: false && github.ref == 'refs/heads/main'
+    # A manual run can target any branch, but only main may be released
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       contents: write
