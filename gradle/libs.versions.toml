@@ -1,0 +1,22 @@
+[versions]
+# Must match the AGP version of any build that includes this one, such as hapticlabsplayer's,
+# habplayer's or the example apps'. React Native's, so that React Native apps can include it too
+agp = "9.2.1"
+# The version AGP requires
+kotlin = "2.2.10"
+jreleaser = "1.15.0"
+mediarouter = "1.8.0"
+annotation = "1.9.1"
+junitVersion = "1.2.1"
+testRunner = "1.6.1"
+
+[libraries]
+androidx-mediarouter = { group = "androidx.mediarouter", name = "mediarouter", version.ref = "mediarouter" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "testRunner" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jreleaser = { id = "org.jreleaser", version.ref = "jreleaser" }
